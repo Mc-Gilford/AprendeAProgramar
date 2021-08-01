@@ -56,3 +56,52 @@ En este curso veremos los siguientes temas:
     - Que es una clase
     - Uso de clase y objetos
     - Ejercicios
+
+# Sistemas Operativos
+- [Windows](https://www.microsoft.com/es-mx/software-download/windows10)
+- [Linux](https://ubuntu.com/download)
+
+**Nota: En los casos de programacion es mejor realizarlos con los sistemas en base Linux**
+# Herramientas Instalacion Windows
+Durante el transcurso de este curso usaremos estas herramientas. 
+**Recomendacion instalarlas antes del curso**
+- [Visual Studio Code](https://code.visualstudio.com/Download)
+- [Nodejs](https://nodejs.org/es/download/)
+- [MingW](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
+- [Python](https://www.python.org/downloads/)
+- [Java](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
+- [XAMPP](https://www.apachefriends.org/es/download.html)
+
+**Nota: En dado caso de no tener instaladas puedes hacer uso del siguiente link**
+[onlineGDB](https://www.onlinegdb.com/online_c_compiler)
+
+
+# Herramientas instalacion Linux
+Abrir la terminal de la distribucion linux y correr los siguienter comandos:
+**Recomendacion instalarlas antes del curso**
+- [Visual Studio Code](https://code.visualstudio.com/Download)
+```bash
+sudo apt install ./<file>.deb
+# Si es una distribucion antigua
+sudo dpkg -i <file>.deb
+sudo apt-get install -f # Install dependencies
+```
+- [Nodejs](https://nodejs.org/es/download/)
+```bash
+sudo apt install nodejs
+node -v
+sudo apt install npm
+npm -v 
+```
+- [MingW](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
+**Linux ya lo tiene cargado**
+- [Python](https://www.python.org/downloads/)
+```bash
+sudo apt-get update
+sudo apt-get install python3.6
+```
+- [Java](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
+```bash
+sudo apt-get install openjdk-11-jdk
+```
+- [XAMPP](https://vitux.com/ubuntu-xampp/)
