@@ -14,9 +14,9 @@ Este esta compuesto de los siguientes componentes:
 ### Simbologia
 La simbologia se refiere a como debe de ser maquetado un diagrama de flujo
 
-![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Image/hamburguesa.png?raw=true "Hambuger Algorithm")
+![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Extra%20topic/img/simbology.png?raw=true "Hambuger Algorithm")
 
 ### Ejemplo
 Dentro de este ejemplo se ve como funciona un diagrama de flujo en la vida real.
 
-![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Image/hamburguesa.png?raw=true "Hambuger Algorithm")
+![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Extra%20topic/img/example.png?raw=true "Hambuger Algorithm")
