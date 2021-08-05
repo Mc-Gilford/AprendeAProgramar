@@ -20,3 +20,10 @@ La simbologia se refiere a como debe de ser maquetado un diagrama de flujo
 Dentro de este ejemplo se ve como funciona un diagrama de flujo en la vida real.
 
 ![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Extra%20topic/img/example.png?raw=true "Hambuger Algorithm")
+
+### Paginas
+- [Draw io](https://app.diagrams.net/)
+- [Dia](http://dia-installer.de/index.html.es)
+
+### Ejercicio
+Describe el proceso que debes de hacer para hacer un sandwich con un diagrama de flujo
