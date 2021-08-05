@@ -36,7 +36,7 @@ class Inicio()
 {
     public static void main(String args[])
     {
-        System.out.println("Hola mundo"); // Tambien se puede imprimir de esta forma, pero esrara en la misma linea
+        System.out.println("Hola mundo"); // Tambien se puede imprimir de esta forma, pero esrara en la misma linea System.out.print("Hola mundo");
     }
 }
 ```
