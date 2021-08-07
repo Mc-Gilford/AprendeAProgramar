@@ -1,0 +1,17 @@
+var i=1;
+let l=1020303234;
+var f=1.2;
+var d=1.3;
+let b = false;
+var c ='c';
+const stf=10;
+//stf =15;
+let s = "Hola Amigo";
+console.log("INT "+i);
+console.log("LONG "+l);
+console.log("FLOAT "+f);
+console.log("DOUBLE "+d);
+console.log("BOOLEAN "+b);
+console.log("CHAR "+c);
+console.log("STRING "+s);
+console.log("CONSTANT "+stf);
