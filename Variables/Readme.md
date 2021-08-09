@@ -4,6 +4,39 @@
 Un dato es informacion de algo **(un atributo o valor)**
 ## Que es una variable
 Las variables son un lugar donde nosotros almacenamos informacion (que se guarda en un espacio de memoria)
+## Variable Global y Local
+- **Global** Es una variable que se puede utilizar en todo el codigo
+- **Local** Es una varibale que se puede usar dentro de un segemento de codifo
+
+## Ejemplo Varible GlobaL y Local
+``` C
+#include <stdlib.h>
+#include <stdio.h>
+
+long l=1020303234;
+
+int main()
+{
+    int i=1;
+    //l=5;
+    //long l=2;
+    printf("INT %d\n", i);
+    printf("LONG %ld\n", l);
+}
+```
+``` javascript
+var x = 5;
+
+function main()
+{
+    //let x=3;
+    console.log(x);
+}
+
+main();
+```
+**Nota:**
+
 ## Tipos de variables
 ### **INT** Estos son numeros enteros por ejemplo : 1,2,3,...,etc. Este tipo de variable solo puede tener valores de -2^31 y 2^31-1 que son +2147483647 y -2147483648.
 ### C
@@ -135,6 +168,8 @@ Las variables son un lugar donde nosotros almacenamos informacion (que se guarda
 ```python
     v = True
 ```
+**Nota:** En el caso de los booleanos al imprimirlos en C nos dara 1 y 0, esto es porque en sistemas el **1 es true** y **0 es false**.
+
 ### **CHAR** Estos definen un caracter
 ### C
 ```C
@@ -223,7 +258,7 @@ Hacemos referencia al archivo que creamos con el comando **import name**
 import a
 print (a.MY_CONSTANT)
 ```
-### EXAMPLES
+### EEJMPLOS
 ### C
 ```C
     #include <stdlib.h>
@@ -365,3 +400,29 @@ print("CHAR ",c)
 print("STRING ",s)
 print("CONSTANT ",a.STF)
 ```
+
+## Ejercicios
+1. Desarrolla un programa que imprima los siguientes datos usando variables en 3 lenguajes(Es indispensable usar C y otros 2)
+- Nombre(String)
+- Edad(Int)
+- Mayor de edad (Crea una variable booleana, en el caso de C que solo imprima 1 o 0).
+- Peso(Float)
+- Altura(Double)
+- Tipo de sangre(Char en este caso solo tu tipo sin el signo de +, o negativo).
+
+```powershell
+     Nombre: Jose
+     Edad: 24
+     Mayor de edad: 1
+     Peso: 68.2333
+     Altura: 1.68
+     Tipo de sangre: O
+```
+
+2. Desarrolla el mismo ejercicio pero que todo quede en una sola linea
+
+```powershell
+     Nombre: Jose,  Edad: 24, Mayor de edad: 1, Peso: 68.2333,  Altura: 1.68,Tipo de sangre: O
+```
+
+3. Describe con tus palabras la diferencia en **int** / **long**, y **float** / **double**.

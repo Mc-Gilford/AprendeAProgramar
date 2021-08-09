@@ -67,7 +67,7 @@ Durante el transcurso de este curso usaremos estas herramientas.
 **Recomendacion instalarlas antes del curso**
 - [Visual Studio Code](https://code.visualstudio.com/Download)
 - [Nodejs](https://nodejs.org/es/download/)
-- [MingW](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
+- [MingW](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download) (Una vez instalado instala gcc dev, gcc bin, gcc-g++ dev, gcc-g++ bin esto es dentro del programa)
 - [Python](https://www.python.org/downloads/)
 - [Java](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
 - [XAMPP](https://www.apachefriends.org/es/download.html)
