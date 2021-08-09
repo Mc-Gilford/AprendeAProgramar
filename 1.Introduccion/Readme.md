@@ -6,7 +6,7 @@ Es escribir una serie de reglas para que un dispositivo funcione segun nuestras 
 ## Que es algoritmo
 Es una serie de pasos que nosotros determinamos para solucionar un problema
 
-![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/Introduccion/Image/hamburguesa.png?raw=true "Hambuger Algorithm")
+![Algoritmo de hamburguesa](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/1.Introduccion/Image/hamburguesa.png)
 
 ## Lenguaje de programacion
 Es el medio por la cual nosotros le damos instrucciones a una computadora para que realice acciones
