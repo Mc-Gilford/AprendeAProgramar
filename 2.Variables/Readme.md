@@ -6,7 +6,7 @@ Un dato es informacion de algo **(un atributo o valor)**
 Las variables son un lugar donde nosotros almacenamos informacion (que se guarda en un espacio de memoria)
 ## Variable Global y Local
 - **Global** Es una variable que se puede utilizar en todo el codigo
-- **Local** Es una varibale que se puede usar dentro de un segemento de codifo
+- **Local** Es una varibale que se puede usar dentro de un segmento de codigo
 
 ## Ejemplo Varible GlobaL y Local
 ``` C
@@ -101,7 +101,7 @@ main();
 ```
 ### JAVA
 ```JAVA
-    int v = 1.3f;
+    float v = 1.3f;
 ```
 ### JAVASCRIPT
 ```javascript
@@ -204,8 +204,9 @@ main();
 ```
 ### C++
 ```C++
-    char v = "Hola Mundo";
+    char *v = "Hola Mundo";
     char s[4] = "Hola";
+    string str = "Hola Amigo";
 ```
 ### JAVA
 ```JAVA
@@ -231,11 +232,13 @@ main();
 ```
 ### C++
 ```C++
-    const char v = "Hola Mundo";
+    const string v = "Hola Mundo";
+    const int b = 5;
 ```
 ### JAVA
 ```JAVA
     static final String v = "Hola Mundo";
+    static final int b = 5;
 ```
 ### JAVASCRIPT
 ```javascript
