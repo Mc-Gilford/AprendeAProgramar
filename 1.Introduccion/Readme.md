@@ -1,5 +1,5 @@
 # Introduccion
-Hola bienvenidos coders, en este curso vamos aprender como programabar de forma basica
+Hola bienvenidos coders, en este curso vamos aprender como programar de forma basica
 varios lenguajes de programacion con algunos pocos conceptos.
 ## Que es programacion
 Es escribir una serie de reglas para que un dispositivo funcione segun nuestras necesidades
@@ -32,7 +32,7 @@ node holaMundo.js
 ```
 ### Java
 ```Java
-class Inicio()
+class Inicio
 {
     public static void main(String args[])
     {

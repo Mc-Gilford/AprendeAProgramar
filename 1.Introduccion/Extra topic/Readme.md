@@ -127,7 +127,7 @@ console.log("Hola mundo");
 
 ### Java
 ```Java
-class Inicio()
+class Inicio
 {
     public static void main(String args[])
     {
