@@ -1,9 +1,9 @@
-# Variables y tipos de variable
+# Variables y tipos de variable (tipo de dato)
 
 ## Que es un dato
 Un dato es informacion de algo **(un atributo o valor)**
 ## Que es una variable
-Las variables son un lugar donde nosotros almacenamos informacion (que se guarda en un espacio de memoria)
+Las variables son un lugar donde nosotros almacenamos informacion (que se guarda en un espacio de memoria). Estas pueden tener cualquier nombre que nosotros le asignemos al menos que este reservada
 ## Variable Global y Local
 - **Global** Es una variable que se puede utilizar en todo el codigo
 - **Local** Es una varibale que se puede usar dentro de un segmento de codigo
@@ -35,7 +35,27 @@ function main()
 
 main();
 ```
-**Nota:**
+**Nota:** Las variables globales son todas aquellas que no estan encerradas dentro de un segmento de codigo, como en el caso de ***l*** en este ejemplo.
+
+## Estructura al crear una variable
+
+En la programacion es muy usual tener las siguiente estructuras al crear variables en algunos lenguajes puede variar.
+## C, C++, JAVA
+TIPO DE VARIABLE + NOMBRE DE VARIABLE + ASIGNACION 
+```
+    tipo_de_variable nombre_de_variable = asignacion
+```
+## JAVASCRIPT
+DECLARACION DE VARIABLE + NOMBRE DE VARIABLE + ASIGNACION 
+```
+    declaracion_de_variable nombre_de_variable = asignacion
+```
+## PYTHON Y PHP
+NOMBRE DE VARIABLE + ASIGNACION 
+```
+    nombre_de_variable = asignacion
+```
+**Nota:** Nosotros podemos darle cualquier nombre a una variable
 
 ## Tipos de variables
 ### **INT** Estos son numeros enteros por ejemplo : 1,2,3,...,etc. Este tipo de variable solo puede tener valores de -2^31 y 2^31-1 que son +2147483647 y -2147483648.
@@ -261,8 +281,173 @@ Hacemos referencia al archivo que creamos con el comando **import name**
 import a
 print (a.MY_CONSTANT)
 ```
-### EEJMPLOS
+## IMPRIMIR UNA VARIABLE
+Dentro de la programacion muchas ocaciones es necesario imprimir el valor de una variable y para esto usamos los siguientes metodos.
+
 ### C
+En el caso de C es un caso particular y tenemos que usar diferente tipo de formas para imprimir cada tipo de variable.
+```C
+    #include <stdlib.h>
+    #include <stdio.h>
+    #define v "Hola Mundo"
+
+    int main()
+    {
+        int i=1;
+        long l=1020303234;
+        float f=1.2;
+        double d=1.3;
+        bool b = false;
+        char c ='c';
+        char *str = "Hola Amigo";
+        printf("%d\n", i); // Imprime el valor de i
+        printf("%ld\n", l); // Imprime el valor de l
+        printf("%f\n", f); // Imprime el valor de f
+        printf("%lf\n", d); // Imprime el valor de d
+        printf("%d\n", b); // Imprime el valor de b
+        printf("%c\n", c); // Imprime el valor de c
+        printf("%s\n", str); // Imprime el valor de str
+        printf("%s\n", v); // Imprime el valor de v
+    }
+```
+### C++
+```C++
+    #include <iostream>
+    using namespace std;
+
+    //#include <stdbool.h> //Libreria para booleanos
+
+    int main()
+    {
+        int i=1;
+        long l=1020303234;
+        float f=1.2;
+        double d=1.3;
+        bool b = true;
+        char c ='c';
+        const int cons = 18;
+        string str = "Hola Amigo";
+        cout <<i<<"\n"; // Imprime i
+        cout <<l<<"\n"; // Imprime l
+        cout <<f<<"\n"; // Imprime f
+        cout <<d<<"\n"; // Imprime d
+        cout <<b<<"\n"; // Imprime b
+        cout <<c<<"\n"; // Imprime c
+        cout <<str<<"\n"; // Imprime str
+        cout <<cons<<"\n"; // Imprime cons
+    }
+```
+### JAVA
+```JAVA
+public class main {
+    static final int stf=0;
+    public static void main(String str[]) {
+        int i=1;
+        long l=1020303234l;
+        float f=1.2f;
+        double d=1.3d;
+        boolean b = false;
+        char c ='c';
+        String s = "Hola Amigo";
+        System.out.println(i); // Imprime i
+        System.out.println(l); // Imprime l
+        System.out.println(f); // Imprime f
+        System.out.println(d); // Imprime d
+        System.out.println(b); // Imprime b
+        System.out.println(c); // Imprime c
+        System.out.println(s); // Imprime s
+        System.out.println(stf); // Imprime stf
+    }
+}
+
+```
+### JAVASCRIPT
+```javascript
+    var i=1;
+    let l=1020303234;
+    var f=1.2;
+    var d=1.3;
+    let b = false;
+    var c ='c';
+    const stf=10;
+    //stf =15;
+    let s = "Hola Amigo";
+    console.log(i); // Imprime i
+    console.log(l); // Imprime l
+    console.log(f); // Imprime f
+    console.log(d); // Imprime d
+    console.log(b); // Imprime b
+    console.log(c); // Imprime c
+    console.log(s); // Imprime s
+    console.log(stf); // Imprime stf
+```
+### PHP
+```php
+<?php
+    $i=1;
+    $l=1020303234;
+    $f=1.12;
+    $d=1.13;
+    $b = false;
+    $c ='c';
+    const stf=10;
+    //stf =15;
+    $s = "Hola Amigo";
+    echo "$i\n"; // Imprime i 
+    echo "$l\n"; // Imprime l
+    echo "$f\n"; // Imprime f
+    echo "$d\n"; // Imprime d
+    echo "$b\n"; // Imprime b
+    echo "$c\n"; // Imprime c
+    echo "$s\n"; // Imprime s
+    echo stf."\n"; // Imprime stf
+?>
+```
+### PYTHON
+```python
+import a
+i=1
+l=1020303234
+f=1.2
+d=1.3
+b = False
+c ='c'
+s = "Hola Amigo"
+print(i) # Imprime i
+print(l) # Imprime l
+print(f) # Imprime f
+print(d) # Imprime d
+print(b) # Imprime b
+print(c) # Imprime c
+print(s) # Imprime s
+print(a.STF) # Imprime a.STF
+```
+
+## Concatenacion
+
+La concatenacion es la union de 2 o mas variables para hacer una misma por ejemplo se puede concatenar una cadena y un numero, una cadena y otra cadena.
+
+Se estructura puede constar de las siguientes formas
+
+```
+    Cadena+CualquierVariable
+    CualquierVarible+Cadena
+```
+
+**Investigue como concatenar en cada uno de los lenguajes y realiza un programa concatenando un string con un string y un string con un tipo de varible numerica. Recomendacion investiga como convertir numeros a string.**
+Ejemplo
+```
+nombre = "Jose"
+edad = 24
+
+Salida: Jose 24
+```
+
+### EJEMPLOS
+En estos ejemplo imprimiremos un mensaje que nos diga que tipo de variable estamos usando, junto con el valor de la variable que corresponda segun el tipo definido en el mensaje.
+
+### C
+Existe una forma para imprimir cada tipo de variable las cuales se ven a continuacion en el siguiente programa
 ```C
     #include <stdlib.h>
     #include <stdio.h>
@@ -289,6 +474,9 @@ print (a.MY_CONSTANT)
         printf("CONSTANT %s\n", v);
     }
 ```
+
+**Nota:** En los otros lenguajes de programacion nosotros ya no tenemos que imprimir cada variable de diferente forma. Pero en el momento de imprimir un mensaje junto con una variable puede ser que usemos un signo de **+** , o **,** o **.** despues del mensaje, esto nos permite unir el mensaje con nuestra variable.
+
 ### C++
 ```C++
     #include <iostream>
