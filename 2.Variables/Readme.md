@@ -592,6 +592,15 @@ print("STRING ",s)
 print("CONSTANT ",a.STF)
 ```
 
+## Asignacion de nuevo valor
+Una vez creada una variable esta puede cambiar de valor por uno nuevo, esto es muy usual dentro de la programacion, dado a que luego ocupamos nuevos valores para realizar nuevas operaciones. Y se hace de la siguiente manera:
+
+```
+    nombre_de_la_variable = nuevo_valor
+```
+
+**Nota:** En todos los lenguajes es lo mismo pero recuerda respetar la sintaxis de cada uno de estos.
+
 ## Ejercicios
 1. Desarrolla un programa que imprima los siguientes datos usando variables en 3 lenguajes(Es indispensable usar C y otros 2)
 - Nombre(String)
@@ -617,3 +626,20 @@ print("CONSTANT ",a.STF)
 ```
 
 3. Describe con tus palabras la diferencia en **int** / **long**, y **float** / **double**.
+
+4. Usa el ejercicio 1 para realizar este ejercicio y modifica los valores nuevos de las variables ya creadas e imprimelos despues del primer valor de las variables.
+``` C
+     Nombre: Jose
+     Edad: 24
+     Mayor de edad: 1 // True
+     Peso: 68.2333
+     Altura: 1.68
+     Tipo de sangre: 
+     
+     Nombre: Mateo
+     Edad: 25
+     Mayor de edad: 0 // False
+     Peso: 64.2333
+     Altura: 1.70
+     Tipo de sangre: A
+```

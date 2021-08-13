@@ -67,7 +67,7 @@ Describe el proceso que debes de hacer para que una persona mayor de 18 años pu
 
 ### Java
 ```Java
-class Inicio()
+class Inicio
 {
     public static void main(String args[])
     {
