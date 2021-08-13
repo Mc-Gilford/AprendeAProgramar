@@ -6,7 +6,7 @@ Un dato es informacion de algo **(un atributo o valor)**
 Las variables son un lugar donde nosotros almacenamos informacion (que se guarda en un espacio de memoria). Estas pueden tener cualquier nombre que nosotros le asignemos al menos que este reservada
 ## Variable Global y Local
 - **Global** Es una variable que se puede utilizar en todo el codigo
-- **Local** Es una varibale que se puede usar dentro de un segmento de codigo
+- **Local** Es una variable que se puede usar dentro de un segmento de codigo
 
 ## Ejemplo Varible GlobaL y Local
 ``` C
