@@ -3,6 +3,10 @@ Dentro del mundo de la programacion existe operaciones que se realizan en la vid
 Estas con las basicas que encontramos desde el inicio de nuestra vida como la suma, resta, multiplicacion y division, y al igual mientras
 mas avanzamos vamos aprendiendo nuevos tipos de estas asi como las que veremos a continuacion.
 
+## Casteo
+
+El casteo es un factor importante dentro de la porgramacion, en muchas ocasiones nos servira para convertir un tipo de variable a otra, pero es mas visible entre la conversion de float a int, int a float, entreo casi todo tipo de variable numerica.
+
 ## Suma
 
 Dentro de la suma esta lo convecional que nosotros ya conocemos su uso, que es incrementar el valor sumandole otro. Para nuestros lenguajes lo hacemos de la siguiente forma.
@@ -314,9 +318,11 @@ En JS encontramos con el mismo nombre que en el caso de Java, por lo cual vemos 
     $valueResult=pow($base,$exponente);
 ```
 ### PYTHON
+En este caso hacemos el import de la libreria math en python
 ```python
+    import math
     valueOne=5 
-    valueResultOne=sqrt(valueOne)
+    valueResultOne=math.sqrt(valueOne)
 ```
 # Tabla de la verdad
 
@@ -439,6 +445,191 @@ null == undefined // true
 # Contadores
 Un contador nos permite incrementar o disminuir en una cantidad constante cada vez que sucede un evento predeterminado.
 ## Incremental
+El objetivo de un contador incremental es ir aumentando su valor en un valor constante, en muchas ocasiones es usado en los arreglos para ver los elementos. Lo puedes encontra de tres formas diferentes.
+
+```C++
+    i++
+    i+=1
+    i=i+1
+
+```
+
 ## Decremental
+El objetivo de un contador decremental es ir disminuyendo su valor en un valor constante, en muchas ocasiones es usado en los arreglos para ver los elementos de arriba hacia abajo. Lo puedes encontra de tres formas diferentes.
+
+```C++
+    i--
+    i-=1
+    i=i-1
+
+```
 
 ## Operaciones a una sola variable
+Dentro de estas operaciones se encuentra procesos que antes de nuestro signo igual tenemos algunos operadores que estos actuaran con el valor que tenemos a lado de nuestro lado derecho de nuestro signo de igual. Por ejemplo:
+
+``` C++
+    int i = 0;
+    i+=5;
+```
+Esto hara que a nuestro y le sumemos el valor de 5, por lo cual tendremos el siguiente valor
+``` C++
+    i = 5;
+```
+
+## Ejemplos
+### C
+En el caso de C compilar mediante el siguiente comando:
+```powershell
+gcc main.c -o main -lm
+```
+
+```C
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int numberOne=4, numberTwo=5;
+    int resultSum= numberOne+numberTwo;
+    int resultRest= numberOne-numberTwo;
+    int resultMult= numberOne*numberTwo;
+    int resultDiv= (float)(numberOne/numberTwo); // Casteo
+    int resultMod= numberOne%numberTwo;
+    int resultExp= pow(numberOne, numberTwo);
+    int resultSqrt= sqrt(numberOne);
+
+    printf("Suma %d \n", resultSum);
+    printf("Resta %d \n", resultRest);
+    printf("Multiplicacion %d \n", resultMult);
+    printf("Division %d \n", resultDiv);
+    printf("Modulo %d \n", resultMod);
+    printf("Exponencia %d \n", resultExp);
+    printf("Raiz %d \n", resultSqrt);
+}
+```
+
+**Nota:** Esto nos permite hacer la compilacion de la libreria **math.h**
+### C++
+Dentro de este tambien hacemos la importacion de la libreria **math.h**
+```C++
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int numberOne=4, numberTwo=5;
+    int resultSum= numberOne+numberTwo;
+    int resultRest= numberOne-numberTwo;
+    int resultMult= numberOne*numberTwo;
+    float resultDiv= (float)(numberOne/numberTwo); // Casteo
+    int resultMod= numberOne%numberTwo;
+    int resultExp= pow(numberOne, numberTwo);
+    int resultSqrt= sqrt(numberOne);
+
+    cout<<"Suma "<< resultSum<<"\n";
+    cout<<"Resta "<< resultRest<<"\n";
+    cout<<"Multiplicacion "<< resultMult<<"\n";
+    cout<<"Division "<< resultDiv<<"\n";
+    cout<<"Modulo "<< resultMod<<"\n";
+    cout<<"Exponencia "<< resultExp<<"\n";
+    cout<<"Raiz "<< resultSqrt<<"\n";
+}
+```
+### JAVA
+Dentro de Java tambien hacemos importaciones
+```Java
+import java.lang.Math;
+
+public class Main{
+    public static void main(String[] args) { 
+        int numberOne=4, numberTwo=5;
+        int resultSum= numberOne+numberTwo;
+        int resultRest= numberOne-numberTwo;
+        int resultMult= numberOne*numberTwo;
+        float resultDiv= (float)(numberOne/numberTwo); // Casteo
+        int resultMod= numberOne%numberTwo;
+        int resultExp= (int)(Math.pow(numberOne, numberTwo)); //Casteo
+        int resultSqrt= (int)(Math.sqrt(numberOne)); //Casteo 
+
+        System.out.println("Suma "+ resultSum);
+        System.out.println("Resta "+ resultRest);
+        System.out.println("Multiplicacion "+ resultMult);
+        System.out.println("Division "+ resultDiv);
+        System.out.println("Modulo "+ resultMod);
+        System.out.println("Exponencia "+ resultExp);
+        System.out.println("Raiz "+ resultSqrt);
+    }
+}
+```
+### JS
+Si observamos aunque no hace un impor a una libreria, si tiene un metodo Math para usar
+```JS
+var numberOne=4, numberTwo=5;
+var resultSum= numberOne+numberTwo;
+var resultRest= numberOne-numberTwo;
+var resultMult= numberOne*numberTwo;
+var resultDiv= (numberOne/numberTwo);
+var resultMod= numberOne%numberTwo;
+var resultExp= Math.pow(numberOne, numberTwo);
+var resultSqrt= Math.sqrt(numberOne);
+
+console.log("Suma "+ resultSum);
+console.log("Resta "+ resultRest);
+console.log("Multiplicacion "+ resultMult);
+console.log("Division "+ resultDiv);
+console.log("Modulo "+ resultMod);
+console.log("Exponencia "+ resultExp);
+console.log("Raiz "+ resultSqrt);
+```
+### PHP
+```PHP
+<?php
+$numberOne=4;
+$numberTwo=5;
+$resultSum= $numberOne+$numberTwo;
+$resultRest= $numberOne-$numberTwo;
+$resultMult= $numberOne*$numberTwo;
+$resultDiv= ($numberOne/$numberTwo);
+$resultMod= $numberOne%$numberTwo;
+$resultExp= pow($numberOne, $numberTwo);
+$resultSqrt= sqrt($numberOne);
+
+echo "Suma ".$resultSum."\n";
+echo "Resta ".$resultRest."\n";
+echo "Multiplicacion ".$resultMult."\n";
+echo "Division ".$resultDiv."\n";
+echo "Modulo ".$resultMod."\n";
+echo "Exponencia ".$resultExp."\n";
+echo "Raiz ".$resultSqrt."\n";
+?>
+```
+### PYTHON
+```PYTHON
+import math 
+#En python no se podemos declarar dos variables seguidas, con una coma
+numberOne=4
+numberTwo=5
+resultSum= numberOne+numberTwo
+resultRest= numberOne-numberTwo
+resultMult= numberOne*numberTwo
+resultDiv= (numberOne/numberTwo)
+resultMod= numberOne%numberTwo
+resultExp= pow(numberOne, numberTwo)
+resultSqrt= math.sqrt(numberOne)
+
+print("Suma ", resultSum)
+print("Resta ", resultRest)
+print("Multiplicacion ", resultMult)
+print("Division ", resultDiv)
+print("Modulo ", resultMod)
+print("Exponencia ", resultExp)
+print("Raiz ", resultSqrt)
+```
+## Ejercicios
+1. Realiza las operaciones basicas a tres variables creadas y guardalas en un resultado, imprime cada una de estas
+2. Lee el siguiente articulo y con un ejemplo y tus palabras intenta explicarlo [Articulo](https://www.ibm.com/docs/es/netcoolomnibus/8.1?topic=SSSHTQ_8.1.0/com.ibm.netcool_OMNIbus.doc_8.1.0/omnibus/wip/admin/concept/omn_adm_sql_operatorprecedence.html)
+3. Escribe con los operadores basicos +,-,*,/ las operaciones de una sola variable.
+4. Crear 4 contadores, el primero debe de incrementar 2 y el segundo disminuir 2, en el tercer caso este debe triplicar su valor, y en el cuarto debe de hacer lo opuesto (Todo dentro de una linea de codigo).
+5. Crea un programa que tenga una variable par y otra impar, y mediante alguno operacion crea la forma para saber si es par o impar.

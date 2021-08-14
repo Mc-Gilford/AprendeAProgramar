@@ -277,7 +277,7 @@ MY_CONSTANT = 50
 ```
 Hacemos referencia al archivo que creamos con el comando **import name**
 ```python
-# b.py
+# main.py
 import a
 print (a.MY_CONSTANT)
 ```
