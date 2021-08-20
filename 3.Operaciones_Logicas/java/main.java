@@ -2,12 +2,14 @@ import java.lang.Math;
 
 public class Main{
     public static void main(String[] args) { 
-        int numberOne=4, numberTwo=5;
+        int numberOne=4, numberTwo=5;        
+        float numberOneA=4, numberTwoB=5;
+
         int resultSum= numberOne+numberTwo;
         int resultRest= numberOne-numberTwo;
         int resultMult= numberOne*numberTwo;
-        float resultDiv= (float)(numberOne/numberTwo); // Casteo
-        int resultMod= numberOne%numberTwo;
+        float resultDiv= (float)(numberOneA/numberTwoB); // Casteo
+        int resultMod= numberOne%numberTwo; 
         int resultExp= (int)(Math.pow(numberOne, numberTwo)); //Casteo
         int resultSqrt= (int)(Math.sqrt(numberOne)); //Casteo 
 

@@ -195,7 +195,7 @@ En el caso de 4/2=0 nuestro modulo sera de 0 dado que 2 cabe 2 veces en 4 y nos 
 ```
 
 ## Exponencia
-Dentro de la raiz esta lo convecional que nosotros ya conocemos su uso, que es el valor multiplicando entre n veces asi mismo. Para nuestros lenguajes lo hacemos de la siguiente forma.
+Dentro de la exponencia esta lo convecional que nosotros ya conocemos su uso, que es el valor multiplicando entre n veces asi mismo. Para nuestros lenguajes lo hacemos de la siguiente forma.
 
 Dentro de algunos de nuestros programas encontraremos importaciones o librerias especiales, que nos permitiran realizar nuestras exponencias.
 
@@ -314,8 +314,9 @@ En JS encontramos con el mismo nombre que en el caso de Java, por lo cual vemos 
 ```
 ### PHP
 ```php
-    $base=5; $exponente=3; $valueResult;
-    $valueResult=pow($base,$exponente);
+    $valueOne=25;
+    $valueResult;
+    $valueResult=sqrt($valueOne);
 ```
 ### PYTHON
 En este caso hacemos el import de la libreria math en python
@@ -491,13 +492,15 @@ gcc main.c -o main -lm
 int main()
 {
     int numberOne=4, numberTwo=5;
+    int numberOneA=4, numberTwoB=5;
     int resultSum= numberOne+numberTwo;
     int resultRest= numberOne-numberTwo;
     int resultMult= numberOne*numberTwo;
-    int resultDiv= (float)(numberOne/numberTwo); // Casteo
+    float resultDiv= numberOneA/numberTwoB; // Casteo
     int resultMod= numberOne%numberTwo;
     int resultExp= pow(numberOne, numberTwo);
     int resultSqrt= sqrt(numberOne);
+
 
     printf("Suma %d \n", resultSum);
     printf("Resta %d \n", resultRest);
@@ -520,10 +523,11 @@ using namespace std;
 int main()
 {
     int numberOne=4, numberTwo=5;
+    float numberOneA=4, numberTwoB=5;
     int resultSum= numberOne+numberTwo;
     int resultRest= numberOne-numberTwo;
     int resultMult= numberOne*numberTwo;
-    float resultDiv= (float)(numberOne/numberTwo); // Casteo
+    float resultDiv= numberOneA/numberTwoB; // Casteo
     int resultMod= numberOne%numberTwo;
     int resultExp= pow(numberOne, numberTwo);
     int resultSqrt= sqrt(numberOne);
@@ -532,7 +536,7 @@ int main()
     cout<<"Resta "<< resultRest<<"\n";
     cout<<"Multiplicacion "<< resultMult<<"\n";
     cout<<"Division "<< resultDiv<<"\n";
-    cout<<"Modulo "<< resultMod<<"\n";
+    //cout<<"Modulo "<< resultMod<<"\n";
     cout<<"Exponencia "<< resultExp<<"\n";
     cout<<"Raiz "<< resultSqrt<<"\n";
 }
@@ -544,12 +548,14 @@ import java.lang.Math;
 
 public class Main{
     public static void main(String[] args) { 
-        int numberOne=4, numberTwo=5;
+        int numberOne=4, numberTwo=5;        
+        float numberOneA=4, numberTwoB=5;
+
         int resultSum= numberOne+numberTwo;
         int resultRest= numberOne-numberTwo;
         int resultMult= numberOne*numberTwo;
-        float resultDiv= (float)(numberOne/numberTwo); // Casteo
-        int resultMod= numberOne%numberTwo;
+        float resultDiv= (float)(numberOneA/numberTwoB); // Casteo
+        int resultMod= numberOne%numberTwo; 
         int resultExp= (int)(Math.pow(numberOne, numberTwo)); //Casteo
         int resultSqrt= (int)(Math.sqrt(numberOne)); //Casteo 
 

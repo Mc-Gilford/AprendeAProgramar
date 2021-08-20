@@ -7,7 +7,7 @@ resultRest= numberOne-numberTwo
 resultMult= numberOne*numberTwo
 resultDiv= (numberOne/numberTwo)
 resultMod= numberOne%numberTwo
-resultExp= pow(numberOne, numberTwo)
+resultExp= math.pow(numberOne, numberTwo)
 resultSqrt= math.sqrt(numberOne)
 
 print("Suma ", resultSum)

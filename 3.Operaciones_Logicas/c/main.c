@@ -5,13 +5,15 @@
 int main()
 {
     int numberOne=4, numberTwo=5;
+    int numberOneA=4, numberTwoB=5;
     int resultSum= numberOne+numberTwo;
     int resultRest= numberOne-numberTwo;
     int resultMult= numberOne*numberTwo;
-    float resultDiv= (float)(numberOne/numberTwo); // Casteo
+    float resultDiv= numberOneA/numberTwoB; // Casteo
     int resultMod= numberOne%numberTwo;
     int resultExp= pow(numberOne, numberTwo);
     int resultSqrt= sqrt(numberOne);
+
 
     printf("Suma %d \n", resultSum);
     printf("Resta %d \n", resultRest);
