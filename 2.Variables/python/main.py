@@ -6,6 +6,7 @@ d=1.3
 b = False
 c ='c'
 s = "Hola Amigo"
+
 print("INT ",i)
 print("LONG ",l)
 print("FLOAT ",f)
