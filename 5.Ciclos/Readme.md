@@ -53,12 +53,14 @@ El uso del ciclo while es de los mas usados en el momento de la programacion, es
 ``` powershell
     inicializacion
     while condicion
+```
 ### Ciclo infinito
 ``` java
     while(1){
 
     }
 ```
+
 ``` java
     while(true){
 
