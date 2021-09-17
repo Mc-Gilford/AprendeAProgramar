@@ -37,7 +37,7 @@ x = (int*)malloc(sizeof(int)*cantidad);
 ArrayList <tipoDeDato> vector = new ArrayList<tipoDeDato>();
 ```
 
-Investisga como se hacen los ultimos mencionados.
+Investiga como se hacen los ultimos mencionados.
 
 ### JAVASCRIPT
 ```js
@@ -64,4 +64,105 @@ Array = [1,2,3,4]
 ## Arreglo bidimensional
 Los arreglos bidimensionales son tablas de valores. Cada elemento de un arreglo bidimensional está simultáneamente en una fila y en una columna.
 
+Estos tipos de arreglos tienen dos indices el cual nos va a decir nuestro movimiento en "x" y en "y", esto es muy parecido cuando veiamos posiciones de un plano cartesiano. Cada elemento guarda un valor establecido mediante el elemento y los dos indices.
+
+``` java
+m[i][j]=0
+```
+
 ![Arreglo Bidimensional](https://github.com/McGilfordJose/AprendeAProgramar/blob/main/6.%20Arreglos/img/arreglobidi.png)
+
+### C, C++
+``` c++
+/*Matriz estaticos*/
+int vectorDos[2][2] = {{1,2},{1,2}};
+```
+``` c++
+/*Dinamico*/
+int **matriz;
+matriz = (int **)malloc (FILAS*sizeof(int *));
+
+for (i=0;i<FILAS;i++)
+matriz[i] = (int *) malloc (COLS*sizeof(int));
+```
+
+## JAVA
+``` java
+int [][]vectorDos = {{1,2},{1,2}};
+```
+
+``` c++
+int [][]vectorDos = new int[x][y];
+```
+
+### JAVASCRIPT
+```js
+var items = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+print(items[0][0]); // 1
+print(items);
+```
+
+```js
+var x = new Array(3);
+
+for (var i = 0; i < x.length; i++) {
+  x[i] = new Array(3);
+}
+
+var cont=0;
+for(var i=0; i<x.length;i++)
+    for(var j=0; j <x[i].length;j++)
+    {
+        x[i][j]=cont;
+        print(x[i][j]);
+        cont++;
+    }
+print(x);
+```
+
+### PHP
+```php
+$valor [0] [0] = 1; $valor [0] [1] = 14; $valor [0] [2] = 8; $valor [0] [3] = 3;
+
+$valor [1] [0] = 6; $valor [1] [1] = 19; $valor [1] [2] = 7; $valor [1] [3] = 2;
+
+$valor [2] [0] = 3; $valor [2] [1] = 13; $valor [2] [2] = 4; $valor [2] [3] = 1;
+
+$a = array(
+
+array(1,2),
+
+array(3, 4),
+
+array(5, 6)
+
+);
+
+echo $a[2][1];
+
+echo $a[0][0];
+
+
+```
+### Python
+```python
+matriz = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9]
+]
+print(matriz)
+for i in range(3):
+    for j in range(3):
+        print(matriz[i][j])
+```
+
+### Ejercicios
+1. Crea un programa donde dado un arreglo se imprima del ultimo al primero
+2. Saca el promedio de un arreglo
+3. Calcula la suma de 2 matrices 
+4. Calcula la resta de 2 matrices
